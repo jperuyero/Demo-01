@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <title>Alligators Closet</title>
+</head>
+
+<body>
+  <nav class="tw-border-b tw-sticky tw-top-0 tw-transition-all tw-duration-500 tw-bg-white" id="nav">
+    <div class="tw-flex tw-flex-row-reverse md:tw-flex-row md:tw-justify-between tw-container tw-px-5 md:tw-px-0 tw-mx-auto
+      tw-items-center tw-pt-5 tw-pr-">
+      <div class="tw-w-full md:tw-w-auto tw-ml-5 md:tw-ml-0">
+        <a href="./index.html">
+          <img class="tw-h-20" src="./assets/LOGO EDITABLE.svg" alt="logo">
+        </a>
+      </div>
+      <div>
+        <button class="tw-flex md:tw-hidden" onclick="showMenu()">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M1 1H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M1 13H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+        <div class="tw-hidden md:tw-flex tw-flex-wrap tw-uppercase tw-text-sm animate__animated inactive"
+          id="menu-items">
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Home</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Descripción</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Galería</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Facilidades</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Servicios</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Precios</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Clientes</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Equipo</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Tienda</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Contacto</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Ubicación</a>
+          <a class="tw-px-2 tw-block tw-w-full md:tw-inline md:tw-w-auto" href="./index">Blog</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+  </header>
+  <h1 class="">Alligators Closet</h1>
+  <div class="tw-h-screen"></div>
+  <div class="tw-h-screen"></div>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.replace("tw-py-2", "tw-py-0");
+      } else {
+        nav.classList.replace("tw-py-0", "tw-py-2");
+      }
+    }
+    const menuItems = document.getElementById('menu-items');
+
+    function showMenu() {
+      if (menuItems.classList.contains("inactive")) {
+        menuItems.classList.replace("inactive", "active")
+        menuItems.classList.remove("animate__fadeOutLeftBig")
+        menuItems.classList.add("animate__fadeInLeftBig")
+        menuItems.classList.toggle("tw-hidden")
+        
+      } else {
+        menuItems.classList.replace("active", "inactive")
+        menuItems.classList.remove("animate__fadeInLeftBig")
+        menuItems.classList.add("animate__fadeOutLeftBig")
+        setTimeout(menuItems.classList.toggle("tw-hidden"), 1000);
+      }
+    }
+  </script>
+</body>
+
+</html>

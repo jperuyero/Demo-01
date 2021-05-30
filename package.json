@@ -1,0 +1,20 @@
+{
+	"name": "alligators-closet",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@gitlab.com:digiceo-hosting/alligators/maquetado-sitio-web.git",
+	"author": "jperuyero <jorge.peruyero@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"build-tw": "postcss src/styles/global.sass -o public/styles/global.css"
+	},
+	"dependencies": {
+		"animate.css": "^4.1.1",
+		"autoprefixer": "^10.2.6",
+		"postcss": "^8.3.0",
+		"postcss-cli": "^8.3.1",
+		"postcss-import": "^14.0.2",
+		"swiper": "^6.6.2",
+		"tailwindcss": "^2.1.2"
+	}
+}
