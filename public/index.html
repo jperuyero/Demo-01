@@ -12,19 +12,24 @@
 </head>
 
 <body>
-  <div class="tw-bg-gray-700 tw-w-full tw-h-11">
-    <div class="
-					lg:tw-container
-					tw-h-full tw-mx-auto tw-px-0
-					lg:tw-px-5
-					tw-flex tw-justify-between tw-items-center
-				">
-      <span class="material-icons tw-text-white"> phone </span>
-      <div class="tw-flex tw-items-center tw-text-white">
-        <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white"> facebook
-          </span>Facebook</a>
-        <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white tw-mx-2">
-            photo_camera </span>Instagram</a>
+  <div class="tw-bg-gray-700 tw-w-full tw-h-11 md:tw-flex tw-items-center tw-hidden">
+    <div class="md:container tw-mx-auto tw-px-5 md:tw-px-0 tw-w-full">
+      <div class="
+            lg:tw-container
+            tw-h-full tw-mx-auto tw-px-0
+            lg:tw-px-5
+            tw-flex tw-justify-between tw-items-center
+          ">
+          <p class="tw-flex tw-items-center tw-text-white">
+            <span class="material-icons tw-text-white"> phone </span>
+            +1 7132450306
+          </p>
+        <div class="tw-flex tw-items-center tw-text-white">
+          <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white"> facebook
+            </span>Facebook</a>
+          <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white tw-mx-2">
+              photo_camera </span>Instagram</a>
+        </div>
       </div>
     </div>
   </div>
@@ -171,18 +176,15 @@
     </div>
   </nav>
   <!-- Slider -->
-  <header class="tw-bg-purple-500 swiper-container homeSlider">
-    <div class="tw-h-screen-80 tw-w-full swiper-wrapper">
+  <header class="tw-bg-purple-500 swiper-container homeSlider tw-w-11/12 md:tw-w-full tw-rounded-xl md:tw-rounded-none">
+    <div class="tw-h-screen-50 md:tw-h-screen-80 tw-w-full swiper-wrapper">
       <div class="
 						swiper-slide
 						tw-bg-purple-500 tw-flex tw-items-center tw-justify-center
 					">
-        <div class="
-							tw-bg-white tw-p-5 tw-max-w-2xl
-							animate__animated animate__animated
-						">
-          <h1 class="tw-text-4xl tw-font-bold tw-uppercase">Title 1</h1>
-          <p class="animate__animated">
+        <div class="tw-bg-transparent md:tw-bg-white tw-p-5 tw-max-w-xs md:tw-max-w-2xl animate__animated">
+          <h1 class="tw-text-4xl tw-font-bold tw-uppercase animate__animated tw-text-center">Title 1</h1>
+          <p class="animate__animated  tw-text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             omnis in velit id ab sit inventore voluptates hic soluta voluptate
             aspernatur accusamus reprehenderit illum cupiditate repellat, iure
@@ -194,11 +196,11 @@
 						swiper-slide
 						tw-bg-pink-500 tw-flex tw-items-center tw-justify-center
 					">
-        <div class="tw-bg-white tw-p-5 tw-max-w-2xl animate__animated">
-          <h1 class="tw-text-4xl tw-font-bold tw-uppercase animate__animated">
+        <div class="tw-bg-transparent md:tw-bg-white tw-p-5 tw-max-w-xs md:tw-max-w-2xl animate__animated">
+          <h1 class="tw-text-4xl tw-font-bold tw-uppercase animate__animated tw-text-center">
             Title 2
           </h1>
-          <p class="animate__animated">
+          <p class="animate__animated  tw-text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             omnis in velit id ab sit inventore voluptates hic soluta voluptate
             aspernatur accusamus reprehenderit illum cupiditate repellat, iure
@@ -210,11 +212,11 @@
 						swiper-slide
 						tw-bg-green-500 tw-flex tw-items-center tw-justify-center
 					">
-        <div class="tw-bg-white tw-p-5 tw-max-w-2xl animate__animated">
-          <h1 class="tw-text-4xl tw-font-bold tw-uppercase animate__animated">
+        <div class="tw-bg-transparent md:tw-bg-white tw-p-5 tw-max-w-xs md:tw-max-w-2xl animate__animated">
+          <h1 class="tw-text-4xl tw-font-bold tw-uppercase animate__animated tw-text-center">
             Title 3
           </h1>
-          <p class="animate__animated">
+          <p class="animate__animated  tw-text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             omnis in velit id ab sit inventore voluptates hic soluta voluptate
             aspernatur accusamus reprehenderit illum cupiditate repellat, iure
@@ -319,7 +321,7 @@
         delay: 5000,
       },
     });
-    swiper.on("slideChangeTransitionEnd", function () {
+    swiper.on("slideChangeTransitionStart", function () {
       console.log("object");
       document
         .querySelector(".swiper-slide-active div")

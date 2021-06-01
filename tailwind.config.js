@@ -7,6 +7,7 @@ module.exports = {
 		extend: {
 			height: {
 				"screen-80": "80vh",
+				"screen-50": "50vh",
 			},
 			transitionProperty: {
 				height: "height",
