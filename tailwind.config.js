@@ -5,6 +5,9 @@ module.exports = {
 	important: true,
 	theme: {
 		extend: {
+			height: {
+				"screen-80": "80vh",
+			},
 			transitionProperty: {
 				height: "height",
 				spacing: "margin, padding",
@@ -15,7 +18,9 @@ module.exports = {
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			transitionProperty: ["hover", "focus"],
+		},
 	},
 	plugins: [],
 };
