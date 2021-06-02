@@ -6,16 +6,31 @@
 	"author": "jperuyero <jorge.peruyero@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"build-tw": "postcss src/styles/global.sass -o public/styles/global.css"
+		"build-tw": "postcss src/styles/global.sass -o libs/CSS/global.css",
+		"start": "webpack serve --mode=development && postcss src/styles/global.sass -o libs/CSS/global.css",
+		"build": "export NODE_ENV=production && webpack && postcss src/styles/global.sass -o libs/CSS/global.css"
 	},
 	"dependencies": {
+		"@babel/core": "^7.14.3",
+		"@babel/preset-env": "^7.14.4",
 		"@fortawesome/fontawesome-free": "^5.15.3",
 		"animate.css": "^4.1.1",
 		"autoprefixer": "^10.2.6",
+		"babel-loader": "^8.2.2",
+		"copy-webpack-plugin": "^9.0.0",
+		"css-loader": "^5.2.6",
 		"postcss": "^8.3.0",
 		"postcss-cli": "^8.3.1",
 		"postcss-import": "^14.0.2",
+		"postcss-loader": "^5.3.0",
+		"postcss-preset-env": "^6.7.0",
+		"sass": "^1.34.0",
+		"sass-loader": "^12.0.0",
+		"style-loader": "^2.0.0",
 		"swiper": "^6.6.2",
-		"tailwindcss": "^2.1.2"
+		"tailwindcss": "^2.1.2",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.0",
+		"webpack-dev-server": "^3.11.2"
 	}
 }

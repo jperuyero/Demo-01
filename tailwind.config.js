@@ -1,5 +1,5 @@
 module.exports = {
-	purge: ["./public/**/*.html", "./public/**/*.js"],
+	purge: ["./**/*.html", "./**/*.js"],
 	darkMode: false, // or 'media' or 'class'
 	prefix: "tw-",
 	important: true,
@@ -20,7 +20,9 @@ module.exports = {
 	},
 	variants: {
 		extend: {
+			display: ["hover", "focus"],
 			transitionProperty: ["hover", "focus"],
+			transform: ["hover", "focus"],
 		},
 	},
 	plugins: [],

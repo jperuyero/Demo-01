@@ -1,0 +1,18 @@
+/* Importación de tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Import animatecss */
+@import 'animate.css/animate.min.css';
+
+/* Import styles swiper*/
+@import 'swiper/swiper.scss';
+
+*{
+  font-family: "Montserrat", sans-serif;
+  @apply tw-text-gray-900
+}
