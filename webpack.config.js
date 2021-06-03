@@ -62,7 +62,7 @@ module.exports = {
 			}
 		),
 		new MiniCssExtractPlugin({
-			filename: "bundle.css",
+			filename: "../CSS/bundle.css",
 		}),
 	],
 };

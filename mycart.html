@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./libs/CSS/bundle.css">
+  <script src="./libs/JS/bundle.js"></script>
+  <title>Alligators Closet</title>
+  <link rel="shortcut icon" href="./assets/LOGO EDITABLE.svg">
+</head>
+
+<body>
+  <div class="tw-bg-gray-700 tw-w-full tw-h-11 md:tw-flex tw-items-center tw-hidden">
+    <div class="md:container tw-mx-auto tw-px-5 md:tw-px-0 tw-w-full">
+      <div class="
+            lg:tw-container
+            tw-h-full tw-mx-auto tw-px-0
+            lg:tw-px-5
+            tw-flex tw-justify-between tw-items-center
+          ">
+        <p class="tw-flex tw-items-center tw-text-white">
+          <span class="material-icons tw-text-white"> phone </span>
+          +1 7132450306
+        </p>
+        <div class="tw-flex tw-items-center tw-text-white">
+          <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white"> facebook
+            </span>Facebook</a>
+          <a class="tw-flex tw-items-center" href="#"><span class="material-icons tw-text-white tw-mx-2">
+              photo_camera </span>Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="
+				tw-border-b
+				md:tw-border-0
+				tw-sticky
+				tw-top-0
+				tw-transition-all
+				tw-duration-500
+				tw-bg-white
+				tw-shadow-lg
+				md:tw-shadow-none
+				tw-z-50 tw-py-2
+			" id="nav">
+    <div class="
+					tw-flex tw-flex-row-reverse
+					md:tw-flex-row md:tw-justify-between md:tw-container
+					tw-px-5
+					md:tw-px-0
+					tw-mx-auto tw-items-center tw-pt-5
+				">
+      <div class="tw-w-full md:tw-w-auto tw-ml-10 md:tw-ml-0">
+        <a href="./index.html">
+          <img class="tw-h-20" src="./assets/LOGO EDITABLE.svg" alt="logo" />
+        </a>
+      </div>
+      <div>
+        <!-- Botón de hamburguesa -->
+        <button class="tw-flex md:tw-hidden" onclick="showMenu()">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M1 1H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M1 13H19" stroke="#111827" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+        <!-- Menú -->
+        <div class="
+							tw-absolute
+							md:tw-static
+							tw-h-screen
+							md:tw-h-auto
+							tw-top-0 tw-left-0 tw-hidden
+							md:tw-block
+							tw-text-sm
+							animate__animated
+							inactive
+						" id="menu-items">
+          <!-- Sección de enlaces de menú -->
+          <div class="
+								tw-absolute
+								md:tw-static
+								tw-h-screen
+								md:tw-h-auto
+								tw-top-0 tw-left-0 tw-z-50 tw-bg-white
+								md:tw-bg-transparent
+								tw-p-5
+								d:tw-p-0
+								md:tw-flex
+                tw-items-center
+								tw-flex-wrap tw-uppercase
+							">
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./index.html">Home</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./descripcion.html">Descripción</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./galeria.html">Galería</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./facilidades.html">Facilidades</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./servicios.html">Servicios</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./precios.html">Precios</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./clientes.html">Clientes</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./equipo.html">Equipo</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./tienda.html">Tienda</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./contacto.html">Contacto</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./ubicacion.html">Ubicación</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./blog.html">Blog</a>
+            <a class="
+									tw-px-2 tw-block tw-w-full
+									md:tw-inline md:tw-w-auto
+									tw-my-5
+									md:tw-my-0
+								" href="./mycart.html"><button
+								  class="tw-p-1 tw-flex tw-items-center tw-bg-gray-700 tw-rounded tw-transition tw-duration-500 tw-w-full">
+								  <span class="material-icons tw-text-white tw-mx-auto">
+								    shopping_cart
+								  </span>
+								</button></a>
+          </div>
+          <!-- Pantalla para cerrar menú en dispositivos móviles -->
+          <div class="
+								tw-absolute tw-h-screen tw-w-screen
+								md:tw-hidden
+								tw-bg-opacity-25 tw-inset-0 tw-z-40
+							" onclick="showMenu()"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="md:tw-container tw-mx-auto tw-mt-10 md:tw-px-0 tw-px-5">
+    <div class="tw-flex tw-items-center tw-flex-wrap">
+      <hr class="tw-flex-grow tw-border-t-1 tw-h-10 tw-hidden md:tw-block" />
+      <h1
+        class="tw-flex-grow-0 tw-mx-5 tw-mb-2 md:tw-mb-10 tw-text-2xl tw-uppercase tw-font-bold tw-w-full md:tw-w-max tw-text-center">
+        Tienda
+      </h1>
+      <hr class="tw-flex-grow tw-border-t-1 tw-h-10" />
+    </div>
+    <!-- Cart -->
+    <section class="tw-flex tw-flex-col tw-justify-end my-5">
+      <div class="tw-overflow-x-auto">
+        <table class="tw-table-auto tw-border-collapse table-fixed tw-my-5">
+          <thead class="tw-border tw-border-green-500 md:tw-border-gray-500">
+            <tr>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500 tw-w-1/12">Eliminar</th>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500 tw-w-1/6">Imagen</th>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500">Producto</th>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500 tw-w-1/12">Cantidad</th>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500 tw-w-1/12">Precio unitario</th>
+              <th class="tw-border tw-border-green-500 md:tw-border-gray-500 tw-w-1/12">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500">
+                <button
+                  class="tw-p-1 tw-flex tw-items-center tw-bg-red-700 tw-rounded tw-transition tw-duration-500 tw-mx-auto">
+                  <span class="material-icons tw-text-white">
+                    delete
+                  </span>
+                </button>
+              </td>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500"><img
+                  class="tw-object-cover tw-w-full"
+                  src="https://beta.dck.com.mx/panel/admin/storage/products/WhatsApp_Image_2021-05-29_at_10.40.16_PM.jpeg"
+                  alt="galery" /></td>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500">Intro to CSS</td>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500"><input
+                  class="tw-p-2 tw-w-full tw-rounded tw-border-0 md:tw-border tw-bg-gray-100 md:tw-bg-white tw-mx-1"
+                  type="number" id="cantidad" value="1" min="1" /></td>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500 tw-text-right">$ 735.00</td>
+              <td class="tw-p-2 tw-border tw-border-green-500 md:tw-border-gray-500 tw-text-right">$ 735.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tw-flex tw-justify-end">
+          <div class="tw-grid tw-gap-1 tw-max-w-xs tw-bg-gray-100 tw-p-5">
+            <p class="tw-text-right">Subtotal <span>$ 735.00</span></p>
+            <p class="tw-text-right">IVA <span>$ 117.60</span></p>
+            <p class="tw-text-right tw-font-bold">Total <span>$ 852.60</span></p>
+            <button class="tw-p-2 tw-bg-green-700 tw-rounded tw-text-white tw-transition tw-duration-500">
+              Confirmar compra
+            </button>
+            <button class="tw-p-2 tw-bg-red-700  tw-rounded tw-text-white tw-transition tw-duration-500">
+              Limpiar carrito
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="tw-inset-x-0 tw-bottom-0 tw-bg-green-700 md:tw-bg-gray-700 tw-pt-5 tw-mt-10 ">
+    <div class="md:tw-container tw-mx-auto tw-mt-10 md:tw-px-0 tw-px-5 tw-grid md:tw-grid-cols-4 tw-gap-4 tw-grid-cols-1
+      md:tw-justify-items-center">
+      <img class="tw-max-h-52 tw-max-w-full tw-hidden md:tw-block" src="./assets/LOGO EDITABLE.svg" alt="logo" />
+      <img class="tw-max-h-52 tw-max-w-full tw-block md:tw-hidden tw-mx-auto" src="./assets/img3.png" alt="logo" />
+      <aside>
+        <header>
+          <h4 class="tw-text-2xl tw-font-bold tw-uppercase tw-text-white">Contactanos</h4>
+        </header>
+        <address>
+          <strong class="tw-text-white"> 125 cypresswood drive Spring Texas, TX 77388 US</strong>
+          <br>
+          <span class="tw-text-white">Texas CP. 77388</span>
+          <br><br>
+          <abbr class="tw-text-white" title="Telephone">Teléfono:</abbr><a class="tw-text-white" a
+            href="tel:2211276404">*1 8322798889</a>
+          <br>
+          <abbr class="tw-text-white" title="Email">Email:</abbr> <a class="tw-text-white"
+            href="mailto:institutok29@dc-digiceo.com">themoneybundle@gmail.com</a>
+        </address>
+      </aside>
+      <aside>
+        <header>
+          <h4 class="tw-text-2xl tw-font-bold tw-uppercase tw-text-white">Horario</h4>
+        </header>
+        <ul class="tw-text-white">
+          <li class="tw-text-white">Lunes - Domingo <br> 24 hrs</li>
+        </ul>
+      </aside>
+      <aside>
+        <header>
+          <h4 class="tw-text-2xl tw-font-bold tw-uppercase tw-text-white">Suscribete</h4>
+        </header>
+        <div>
+          <a class="tw-text-white" href="#" target="_self">Iniciar Sesión</a>
+        </div>
+      </aside>
+    </div>
+    <div class="md:tw-bg-gray-900">
+      <div
+        class="md:tw-container tw-mx-auto tw-mt-10 md:tw-px-0 tw-px-5 md:tw-justify-items-center tw-border-t md:border-0 tw-border-white md:tw-border-transparent">
+        <p class="tw-text-white tw-py-2">© 2021 Alligators | Politica de Privacidad | Terminos y Condiciones.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Navbar -->
+  <script src="./libs/JS/navbar.js"></script>
+
+  <!-- Slider -->
+  <!-- import Swiper JS -->
+  <script src="./libs/JS/swiper-bundle.min.js"></script>
+  <!-- Slider config -->
+  <script>
+    const swiper = new Swiper(".homeSlider", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
+    swiper.on("slideChangeTransitionStart", function () {
+      document
+        .querySelector(".swiper-slide-active div")
+        .classList.toggle("animate__fadeIn");
+      document
+        .querySelector(".swiper-slide-active h1")
+        .classList.toggle("animate__fadeInDown");
+      document
+        .querySelector(".swiper-slide-active p")
+        .classList.toggle("animate__fadeInDown");
+      setTimeout(function () {
+        document
+          .querySelector(".swiper-slide-active div")
+          .classList.toggle("animate__fadeIn");
+        document
+          .querySelector(".swiper-slide-active h1")
+          .classList.toggle("animate__fadeInDown");
+        document
+          .querySelector(".swiper-slide-active p")
+          .classList.toggle("animate__fadeInDown");
+      }, 500);
+    });
+  </script>
+</body>
+
+</html>
