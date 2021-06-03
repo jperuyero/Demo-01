@@ -7,8 +7,8 @@
 	"license": "MIT",
 	"scripts": {
 		"build-tw": "postcss src/styles/global.sass -o libs/CSS/global.css",
-		"start": "webpack serve --mode=development && postcss src/styles/global.sass -o libs/CSS/global.css",
-		"build": "export NODE_ENV=production && webpack && postcss src/styles/global.sass -o libs/CSS/global.css"
+		"start": "webpack serve --mode=development",
+		"build": "export NODE_ENV=production && webpack"
 	},
 	"dependencies": {
 		"@babel/core": "^7.14.3",
@@ -19,6 +19,7 @@
 		"babel-loader": "^8.2.2",
 		"copy-webpack-plugin": "^9.0.0",
 		"css-loader": "^5.2.6",
+		"mini-css-extract-plugin": "^1.6.0",
 		"postcss": "^8.3.0",
 		"postcss-cli": "^8.3.1",
 		"postcss-import": "^14.0.2",

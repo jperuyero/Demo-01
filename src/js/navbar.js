@@ -12,7 +12,7 @@ window.onscroll = function () {
 // Funcionalidad de menú en dispositivos móviles
 const menuItems = document.getElementById("menu-items")
 
-function showMenu() {
+export function showMenu() {
   if (menuItems.classList.contains("inactive")) {
     menuItems.classList.replace("inactive", "active")
     menuItems.classList.remove("animate__fadeOutLeftBig")

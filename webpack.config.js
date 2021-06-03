@@ -1,9 +1,12 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
+
 const Assets = require("./src/assets");
 
 module.exports = {
-	entry: "./src/js/index.js",
+	entry: "./src/js/app.js",
 	output: {
 		path: path.resolve(__dirname, "libs/JS"),
 		filename: "bundle.js",
@@ -20,11 +23,23 @@ module.exports = {
 					},
 				},
 			},
+			{
+				test: /\.(sa|sc|c)ss$/,
+				use: [
+					devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+					"css-loader",
+					"postcss-loader",
+					"sass-loader",
+				],
+			},
 		],
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, "./"),
+		publicPath: "/libs/JS/",
+		compress: true,
 		watchContentBase: true,
+		open: true,
 		hot: true,
 	},
 	plugins: [
@@ -46,5 +61,8 @@ module.exports = {
 				}),
 			}
 		),
+		new MiniCssExtractPlugin({
+			filename: "bundle.css",
+		}),
 	],
 };
