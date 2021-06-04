@@ -4,18 +4,32 @@
 
 En el directorio del proyecto, puede ejecutar:
 
-### `yarn build-tw`
+### `yarn start`
 
-Compila los css en modo de desarrollo.
+Inicia el modo de desarrollo de webpack.
 
-### `NODE_ENV=production yarn build-tw`
+### `yarn build`
 
-Compila, minifica y purga los css en modo de producción.
-
-## Aprende más
+Compila, minifica y purga los estilos y javascript en modo de producción.
 
 ### `yarn install`
 
 Instala las dependencias de node necesarias
 
-Puedes descargar node en: [https://nodejs.org/en/](https://nodejs.org/en/)
+
+## Tecnologías y frameworks usados
+
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [Sass](https://sass-lang.com/)
+- [Postcss](https://postcss.org/)
+- [Purgecss](https://purgecss.com/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Animate.css](https://animate.style/)
+- [Swipper](https://swiperjs.com/)
+
+_Usando solo tecnologías actuales para un desarrollo escalable._
+
+> Es necesario tener instalado Node.js pra ejecutar todos los comandos.
